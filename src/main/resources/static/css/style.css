@@ -1,0 +1,891 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f3ec;
+    color: #3e2723;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    background-color: #3e2723;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    color: #f5d6a1 !important;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #f5d6a1 !important;
+}
+
+.nav-link.active {
+    color: #f5d6a1 !important;
+}
+
+.navbar-toggler {
+    border-color: #f5d6a1;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(245, 214, 161, 0.3);
+}
+
+#contadorCarrinho {
+    background-color: #c89b5c;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+
+/* =========================================
+   CARROSSEL
+========================================= */
+
+.hero {
+    width: 100%;
+    overflow: hidden;
+}
+
+#carouselCafe {
+    width: 100%;
+}
+
+#carouselCafe .carousel-item {
+    position: relative;
+}
+
+#carouselCafe .carousel-item img {
+    display: block;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Escurece levemente a imagem para melhorar o texto */
+
+#carouselCafe .carousel-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+/* Texto do carrossel */
+
+.carousel-caption {
+    z-index: 2;
+    bottom: 20%;
+    left: 10%;
+    right: 10%;
+}
+
+.carousel-caption h1,
+.carousel-caption h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption .btn {
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #f5d6a1;
+    color: #3e2723;
+}
+
+
+/* =========================================
+   TÍTULOS / SUBTÍTULOS
+========================================= */
+
+.subtitulo {
+    display: block;
+    color: #a47745;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.introducao h1,
+.sobre-nos h2,
+.destaques h2,
+.contato h2 {
+    font-weight: bold;
+    color: #3e2723;
+}
+
+
+/* =========================================
+   INTRODUÇÃO
+========================================= */
+
+.introducao {
+    padding: 80px 20px;
+    background-color: #f8f3ec;
+}
+
+.introducao h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.introducao p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    color: #66534c;
+}
+
+.introducao .btn {
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.introducao .btn:hover {
+    background-color: #4e342e;
+}
+
+
+/* =========================================
+   SOBRE NÓS
+========================================= */
+
+.sobre-nos {
+    background-color: white;
+    padding: 90px 20px;
+}
+
+.sobre-nos h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.sobre-nos p {
+    color: #66534c;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.sobre-nos .btn {
+    margin-top: 10px;
+    background-color: #6f4e37;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+}
+
+.sobre-nos .btn:hover {
+    background-color: #4e342e;
+}
+
+
+/* Destaques do Sobre Nós */
+
+.sobre-destaques {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.destaque {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f8f3ec;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #c89b5c;
+    transition: 0.3s;
+}
+
+.destaque:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.icone {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ead8c0;
+    border-radius: 50%;
+    font-size: 27px;
+}
+
+.destaque h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #3e2723;
+}
+
+.destaque p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   DESTAQUES / CATEGORIAS
+========================================= */
+
+.destaques {
+    padding: 90px 20px;
+    background-color: #ead8c0;
+}
+
+.destaques h2 {
+    font-size: 38px;
+}
+
+.destaque-card {
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.destaque-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.destaque-card .card-body {
+    padding: 35px 25px;
+}
+
+.card-icone {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.destaque-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.destaque-card p {
+    color: #6b5a52;
+    margin: 0;
+}
+
+
+/* =========================================
+   CHAMADA PARA PEDIDOS
+========================================= */
+
+.chamada-pedido {
+    background-color: #6f4e37;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.chamada-pedido h2 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.chamada-pedido p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.chamada-pedido .btn {
+    background-color: white;
+    color: #3e2723;
+    padding: 13px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.chamada-pedido .btn:hover {
+    background-color: #f5d6a1;
+    color: #3e2723;
+}
+
+
+/* =========================================
+   TÍTULO DAS PÁGINAS
+========================================= */
+
+.pagina-titulo {
+    background-color: #ead8c0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.pagina-titulo h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pagina-titulo p {
+    font-size: 18px;
+}
+
+
+/* =========================================
+   CARDÁPIO
+========================================= */
+
+.cardapio {
+    padding: 60px 0;
+}
+
+.produto {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.produto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.produto-conteudo {
+    padding: 25px;
+}
+
+.produto-conteudo h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.produto-conteudo p {
+    color: #666;
+    min-height: 48px;
+}
+
+.produto-conteudo strong {
+    display: block;
+    font-size: 21px;
+    margin: 15px 0;
+    color: #6f4e37;
+}
+
+
+/* =========================================
+   BOTÃO PEDIR
+========================================= */
+
+.btn-pedir {
+    width: 100%;
+    border: none;
+    background-color: #6f4e37;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-pedir:hover {
+    background-color: #4e342e;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   PEDIDOS / CARRINHO
+========================================= */
+
+.pedidos {
+    padding: 60px 0;
+    min-height: 500px;
+}
+
+.item-carrinho {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-info h3 {
+    margin-bottom: 5px;
+}
+
+.item-info p {
+    margin: 0;
+    color: #6f4e37;
+}
+
+.item-acoes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-acoes button {
+    border: none;
+    background-color: #6f4e37;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item-acoes span {
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+.item-acoes .btn-remover {
+    width: auto;
+    padding: 0 12px;
+    background-color: #a94442;
+}
+
+.subtotal {
+    min-width: 100px;
+    text-align: right;
+}
+
+.total-pedido {
+    background-color: white;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: right;
+}
+
+.total-pedido h3 {
+    margin-bottom: 20px;
+}
+
+.btn-finalizar {
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-finalizar:hover {
+    background-color: #4e342e;
+}
+
+.btn-voltar {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ead8c0;
+    color: #3e2723;
+    padding: 13px 25px;
+    border-radius: 8px;
+}
+
+.carrinho-vazio {
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.carrinho-vazio h3 {
+    margin-bottom: 15px;
+}
+
+.carrinho-vazio p {
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   CONTATO
+========================================= */
+
+.contato {
+    background-color: #f8f3ec;
+    padding: 90px 20px;
+}
+
+.contato h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.contato > .container > p {
+    color: #66534c;
+    font-size: 18px;
+}
+
+.contato-box {
+    background-color: white;
+    max-width: 600px;
+    margin: 30px auto 0;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contato-box p {
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    color: #f5d6a1;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #d8c8bc;
+}
+
+
+/* =========================================
+   RESPONSIVO - TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .navbar-brand {
+        font-size: 23px;
+    }
+
+    #carouselCafe .carousel-item img {
+        height: 400px;
+    }
+
+    .carousel-caption {
+        bottom: 15%;
+    }
+
+    .carousel-caption h1,
+    .carousel-caption h2 {
+        font-size: 30px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+
+    .introducao {
+        padding: 60px 20px;
+    }
+
+    .introducao h1 {
+        font-size: 32px;
+    }
+
+    .sobre-nos {
+        padding: 65px 20px;
+    }
+
+    .sobre-nos h2 {
+        font-size: 32px;
+    }
+
+    .destaques {
+        padding: 65px 20px;
+    }
+
+    .destaques h2 {
+        font-size: 30px;
+    }
+
+    .chamada-pedido h2 {
+        font-size: 30px;
+    }
+
+    .contato {
+        padding: 65px 20px;
+    }
+
+    .contato h2 {
+        font-size: 30px;
+    }
+
+    .item-carrinho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-acoes {
+        width: 100%;
+    }
+
+    .subtotal {
+        text-align: left;
+    }
+
+    .total-pedido {
+        text-align: center;
+    }
+
+    .btn-finalizar,
+    .btn-voltar {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVO - CELULAR
+========================================= */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    #carouselCafe .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        bottom: 10%;
+        left: 5%;
+        right: 5%;
+    }
+
+    .carousel-caption h1,
+    .carousel-caption h2 {
+        font-size: 24px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .carousel-caption .btn {
+        padding: 9px 18px;
+        font-size: 14px;
+    }
+
+    .introducao h1 {
+        font-size: 27px;
+    }
+
+    .introducao p {
+        font-size: 16px;
+    }
+
+    .sobre-nos h2 {
+        font-size: 28px;
+    }
+
+    .destaque {
+        padding: 20px;
+    }
+
+    .icone {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        font-size: 22px;
+    }
+
+    .destaque h3 {
+        font-size: 18px;
+    }
+
+    .destaque p {
+        font-size: 14px;
+    }
+
+    .produto img {
+        height: 200px;
+    }
+
+    .pagina-titulo {
+        padding: 40px 15px;
+    }
+
+    .pagina-titulo h1 {
+        font-size: 30px;
+    }
+
+    .contato-box {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* LOGIN */
+
+.login {
+    padding: 60px 20px;
+    min-height: 500px;
+}
+
+.login .container {
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.login h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login .container > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #8b5e3c;
+}
+
+.login .botao {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cadastro {
+    margin-top: 25px;
+}
+
+.cadastro a {
+    text-decoration: none;
+    font-weight: bold;
+}

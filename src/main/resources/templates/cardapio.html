@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cardápio - Café Sereno</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+
+            <a class="navbar-brand"
+               href="inicio.html">
+
+                Café Sereno
+
+            </a>
+
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse"
+                 id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="inicio.html">
+
+                            Início
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active"
+                           href="cardapio.html">
+
+                            Cardápio
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="pedidos.html">
+
+                            Pedidos
+
+                            <span id="contadorCarrinho" class="badge bg-danger">
+                                0
+                            </span>
+
+                        </a>
+
+                    </li>
+                     <li class="nav-item">
+
+                        <a class="nav-link active"
+                           href="administrativa.html">
+
+                            Login
+
+                        </a>
+
+                    </li>
+
+
+
+                 
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+    <section class="container py-5">
+
+       
+            <h1>
+               Bebidas Quentes
+            </h1>
+
+            
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+           
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="..//static/img/cafeexpresso.png"
+                         class="card-img-top"
+                         alt="Café Espresso">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Café Espresso
+                        </h3>
+
+                        <p class="card-text">
+                            Café espresso intenso, aromático
+                            e preparado na hora.
+                        </p>
+
+                        <h4>
+                            R$ 6,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Café Espresso', 6.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+          
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/capucremoso.png"
+                         class="card-img-top"
+                         alt="Cappuccino Cremoso">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Cappuccino Cremoso
+                        </h3>
+
+                        <p class="card-text">
+                            Café cremoso com leite vaporizado
+                            e espuma delicada.
+                        </p>
+
+                        <h4>
+                            R$ 10,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Cappuccino Cremoso', 10.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+       
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/chocoquente.png"
+                         class="card-img-top"
+                         alt="Chocolate Quente">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Chocolate quente
+                        </h3>
+
+                        <p class="card-text">
+                            Chocolate quente cremoso,
+                            finalizado com chantilly.
+                        </p>
+
+                        <h4>
+                            R$ 12,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Chocolate quente', 12.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+           <h1>Bebidas Geladas</h1>
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/cafegelado.png"
+                         class="card-img-top"
+                         alt="Café Gelado">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Café Gelado
+                        </h3>
+
+                        <p class="card-text">
+                            Café gelado cremoso servido
+                            com bastante gelo.
+                        </p>
+
+                        <h4>
+                            R$ 11,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Café Gelado', 11.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/chagelado.png"
+                         class="card-img-top"
+                         alt="Cha Gelado">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Cha Gelado
+                        </h3>
+
+                        <p class="card-text">
+                            Cha gelada servida
+                            com bastante gelo.
+                        </p>
+
+                        <h4>
+                            R$ 18,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Cha Gelado', 18.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/milk.png"
+                         class="card-img-top"
+                         alt="Milkshake de Chocolate">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Milkshake de Chocolate
+                        </h3>
+
+                        <p class="card-text">
+                            Milkshake de chocolate cremoso,
+                            perfeito para os amantes de doces.
+                        </p>
+
+                        <h4>
+                            R$ 24,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Milkshake de Chocolate', 12.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+          <h1>
+               Padaria 
+            </h1>
+
+            
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/paodequeijo.png"
+                         class="card-img-top"
+                         alt="Pão de Queijo">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Pão de Queijo
+                        </h3>
+
+                        <p class="card-text">
+                            Pão de queijo tradicional,
+                            perfeito para o café da manhã.
+                        </p>
+
+                        <h4>
+                            R$ 6,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Pão de Queijo', 6.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+           
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/croissant.png"
+                         class="card-img-top"
+                         alt="Croissant">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Croissant
+                        </h3>
+                        </h3>
+
+                        <p class="card-text">
+                            Croissant crocante e saboroso,
+                            perfeito para o café da manhã.
+                        </p>
+
+                        <h4>
+                            R$ 8,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Croissant', 8.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/donuts.png"
+                         class="card-img-top"
+                         alt="Donuts">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Donuts
+                        </h3>
+
+                        <p class="card-text">
+                            Donuts crocantes e saborosos,
+                            perfeitos para o lanche.
+                        </p>
+
+                        <h4>
+                            R$ 12,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Donuts', 12.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+             <h1>Sobremesas</h1>
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/cookie.png"
+                         class="card-img-top"
+                         alt="Cookie">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Cookie
+                        </h3>
+
+                        <p class="card-text">
+                            Cookie saboroso servido
+                            com bastante recheio.
+                        </p>
+
+                        <h4>
+                            R$ 12,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Cookie', 12.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+           
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/brownie.png"
+                         class="card-img-top"
+                         alt="Brownie">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Brownie
+                        </h3>
+
+                        <p class="card-text">
+                            Brownie saboroso servido
+                            com bastante recheio.
+                        </p>
+
+                        <h4>
+                            R$ 14,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Brownie', 14.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+           
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/petit.png"
+                         class="card-img-top"
+                         alt="Petit Gateau">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Petit Gateau
+                        </h3>
+
+                        <p class="card-text">
+                            Petit Gateau saboroso servido
+                            com bastante recheio.
+                        </p>
+
+                        <h4>
+                            R$ 24,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Petit Gateau', 24.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+         <h1>
+               Lanches
+            </h1>
+
+            
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+           
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="..//static/img/esfiha.png"
+                         class="card-img-top"
+                         alt="Esfiha">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Esfiha
+                        </h3>
+
+                        <p class="card-text">
+                            Esfiha saborosa, recheada com carne moída
+                            e preparada na hora.
+                        </p>
+
+                        <h4>
+                            R$ 5,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Esfiha', 5.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+           
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/salgado.png"
+                         class="card-img-top"
+                         alt="Salgado">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Salgado
+                        </h3>
+                        </h3>
+
+                        <p class="card-text">
+                            Salgado saboroso, recheado com carne moída
+                            e preparado na hora.
+                        </p>
+
+                        <h4>
+                            R$ 7,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Salgado', 7.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+           
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/lanche.png"
+                         class="card-img-top"
+                         alt="Lanche">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Lanche
+                        </h3>
+
+                        <p class="card-text">
+                            Lanche saboroso servido
+                            com bastante recheio.
+                        </p>
+
+                        <h4>
+                            R$ 18,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Lanche', 18.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+         <h1>Saudaveis</h1>
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/salada.png"
+                         class="card-img-top"
+                         alt="Salada">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Salada
+                        </h3>
+
+                        <p class="card-text">
+                            Salada fresca e saborosa servida
+                            com bastante vegetais.
+                        </p>
+
+                        <h4>
+                            R$ 12,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Salada', 12.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+           
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/poke.png"
+                         class="card-img-top"
+                         alt="Poke">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Poke
+                        </h3>
+
+                        <p class="card-text">
+                            Poke saboroso servido
+                            com bastante recheio.
+                        </p>
+
+                        <h4>
+                            R$ 23,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Poke', 23.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+           
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img src="../static/img/lanchenatural.png"
+                         class="card-img-top"
+                         alt="Lanche Natural">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="card-title">
+                            Lanche Natural
+                        </h3>
+
+                        <p class="card-text">
+                            Lanche natural saboroso servido
+                            com bastante recheio.
+                        </p>
+
+                        <h4>
+                            R$ 7,00
+                        </h4>
+
+                        <button class="btn btn-dark"
+                                onclick="adicionarCarrinho('Lanche Natural', 7.00)">
+
+                            Pedir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        © 2026 Café Sereno - Todos os direitos reservados.
+    </p>
+
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="/static/js/carrinho.js"></script>
+
+</body>
+
+</html>
